@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper-auth">
     <vue-telegram-login
             mode="callback"
             telegram-login="manager_money_bot"
@@ -24,6 +24,10 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="sass">
+.wrapper-auth
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
 </style>
