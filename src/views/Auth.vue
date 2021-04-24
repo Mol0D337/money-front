@@ -3,6 +3,7 @@
     <vue-telegram-login
             radius="10"
             userpic="false"
+            requestAccess="write"
             mode="callback"
             telegram-login="manager_money_bot"
             @callback="getUserInfo"
