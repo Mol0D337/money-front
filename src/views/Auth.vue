@@ -1,9 +1,11 @@
 <template>
   <div class="wrapper-auth">
     <vue-telegram-login
+            radius="10"
+            userpic="false"
             mode="callback"
             telegram-login="manager_money_bot"
-            @callback="yourCallbackFunction"
+            @callback="getUserInfo"
     />
   </div>
 </template>
@@ -14,10 +16,7 @@
     name: "Auth",
     components: {vueTelegramLogin},
     methods: {
-      yourCallbackFunction (user) {
-        // gets user as an input
-        // id, first_name, last_name, username,
-        // photo_url, auth_date and hash
+      getUserInfo (user) {
         console.log(user)
       }
     }
